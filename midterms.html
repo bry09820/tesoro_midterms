@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bryan's Portfolio</title>
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+ 
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #f8f9fa;
+    }
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 4rem;
+      color: #00ffc3;
+      text-shadow: 0 0 20px #00ffc3;
+    }
+    .section-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 3rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      margin-bottom: 3rem;
+      transition: 0.4s ease-in-out;
+    }
+    .project-item, .skill-item {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: all 0.3s ease-in-out;
+    }
+    .project-item:hover, .skill-item:hover {
+      background-color: rgba(255, 255, 255, 0.08);
+      transform: translateY(-5px) scale(1.02);
+    }
+    footer {
+      border-top: 2px solid #00ffc3;
+      padding: 2rem 0;
+      text-align: center;
+      color: #aaa;
+    }
+    .btn-custom {
+      background-color: #00ffc3;
+      color: #111;
+      border-radius: 30px;
+      padding: 0.75rem 2rem;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+    .btn-custom:hover {
+      background-color: #1abc9c;
+      transform: scale(1.05);
+    }
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(10px);
+    }
+    .nav-link {
+      color: #00ffc3 !important;
+      font-weight: 500;
+    }
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+    .navbar-brand img {
+      max-height: 50px; /* Adjust the size as needed */
+      padding: 5px; /* Adjust the padding as needed */
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+ 
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="BT-logo.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon text-info"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+  <header class="text-center py-5" data-aos="fade-down">
+    <h1>BRYAN</h1>
+    <p class="lead text-white-50">Hardwork. Discipline. Consistency.</p>
+  </header>
+ 
+  <section id="about" class="section-card text-center" data-aos="fade-up">
+    <h2 class="text-info mb-3">About Me</h2>
+    <img src="bry.jpg" alt="Bryan" class="img-fluid rounded-circle shadow" width="180">
+    <p class="mt-3">
+      I’m a dedicated individual who blends physical strength with mental clarity. I’m passionate about working out, building muscle, and staying consistent—both in life and in code.
+    </p>
+  </section>
+ 
+  <section id="projects" class="section-card" data-aos="fade-up" data-aos-delay="100">
+    <h2 class="text-info mb-3">Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="project-item">
+          <i class="fas fa-dumbbell fa-lg me-2 text-info"></i>
+          <strong>Fitness Tracker App</strong>
+          <p class="small">Track progress, calories, and consistency.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="project-item">
+          <i class="fas fa-code fa-lg me-2 text-info"></i>
+          <strong>Workout Logger</strong>
+          <p class="small">Simple, clean UI to log gym sessions.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="project-item">
+          <i class="fas fa-seedling fa-lg me-2 text-info"></i>
+          <strong>Nutrition Guide</strong>
+          <p class="small">Clean eating layout with macro breakdowns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section id="skills" class="section-card" data-aos="fade-up">
+    <h2 class="text-info mb-3">Skills</h2>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="skill-item text-center">
+          <i class="fab fa-html5 fa-2x mb-2 text-warning"></i>
+          <h6>HTML5</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="skill-item text-center">
+          <i class="fab fa-css3-alt fa-2x mb-2 text-primary"></i>
+          <h6>CSS3 / Bootstrap</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="skill-item text-center">
+          <i class="fab fa-js fa-2x mb-2 text-warning"></i>
+          <h6>JavaScript</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section id="contact" class="section-card text-center" data-aos="zoom-in-up">
+    <h2 class="text-info mb-3">Let’s Connect</h2>
+    <p>
+      Got a project in mind, or want to talk fitness, mindset, or tech? I’m open to collabs, convos, and new energy. Hit me up.
+    </p>
+    <a href="mailto:bryan@example.com" class="btn btn-custom mt-3 me-2">
+      <i class="fas fa-paper-plane me-2"></i>Email Me
+    </a>
+    <a href="https://github.com/yourusername" target="_blank" class="btn btn-outline-light mt-3">
+      <i class="fab fa-github me-2"></i>GitHub
+    </a>
+  </section>
+ 
+  <footer>
+    <p>&copy; 2025 Bryan. Powered by hustle and discipline.</p>
+  </footer>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
